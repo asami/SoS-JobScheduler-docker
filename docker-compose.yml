@@ -1,0 +1,17 @@
+jobscheduler:
+  build: .
+  links:
+    - db
+  ports:
+    - "4444:4444"
+db:
+  image: mysql
+  ports:
+    - ":3306"
+  volumes:
+    - conf.d/etc.mysql.conf.d:/etc/mysql/conf.d
+  environment:
+    MYSQL_USER: jobscheduler
+    MYSQL_PASSWORD: jobscheduler
+    MYSQL_ROOT_PASSWORD: jobscheduler
+    MYSQL_DATABASE: jobscheduler
