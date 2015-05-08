@@ -1,4 +1,4 @@
-FROM dockerfile/java:oracle-java8
+FROM java:8
 MAINTAINER asami
 
 ENV JOBSCHEDULER_VERSION 1.9.0

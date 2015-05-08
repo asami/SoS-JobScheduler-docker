@@ -64,16 +64,16 @@
 <com.izforge.izpack.panels.UserInputPanel id="database">
 <userInput>
 <entry key="databaseCreate" value="on"/>
-<entry key="databaseDbms" value="mysql"/>
+<entry key="databaseDbms" value="{{DB_SERVER_DBMS}}"/>
 </userInput>
 </com.izforge.izpack.panels.UserInputPanel>
 <com.izforge.izpack.panels.UserInputPanel id="dbconnection">
 <userInput>
-<entry key="databaseHost" value="{{DB_PORT_3306_TCP_ADDR}}"/>
-<entry key="databasePassword" value="jobscheduler"/>
-<entry key="databaseUser" value="jobscheduler"/>
-<entry key="databaseSchema" value="jobscheduler"/>
-<entry key="databasePort" value="{{DB_PORT_3306_TCP_PORT}}"/>
+<entry key="databaseHost" value="{{DB_SERVER_HOST}}"/>
+<entry key="databasePassword" value="{{DB_SERVER_PASSWORD}}"/>
+<entry key="databaseUser" value="{{DB_SERVER_USER}}"/>
+<entry key="databaseSchema" value="{{DB_SERVER_DATABASE}}"/>
+<entry key="databasePort" value="{{DB_SERVER_PORT}}"/>
 </userInput>
 </com.izforge.izpack.panels.UserInputPanel>
 <com.izforge.izpack.panels.UserInputPanel id="jdbc">
